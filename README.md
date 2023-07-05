@@ -1,2 +1,2 @@
 # learning-cicd
-Just learning CI/CD
+Just learning CI/CD.
