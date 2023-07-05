@@ -58,7 +58,9 @@
       "cy:coverage": "npx nyc cypress run && npx nyc cypress run-ct",
       "cy:report": "open coverage/lcov-report/index.html",
       "eslint:test": "npx eslint src/**",
-      "eslint:fix": "npx eslint --fix . --ext .tsx,.ts src"
+      "eslint:fix": "npx eslint --fix . --ext .tsx,.ts src",
+      "validate": "npm-run-all --parallel cy:tests-e2e-cl cy:tests-unit-cl eslint",
+      "precommit": "npm run validate"
    },
    "browserslist": {
       "production": [
@@ -89,9 +91,11 @@
       "eslint-plugin-react": "^7.28.0",
       "gh-pages": "^5.0.0",
       "html-webpack-plugin": "^4.5.2",
+      "husky": "^8.0.3",
       "junit-report-merger": "^3.0.5",
       "mocha": "^10.0.0",
-      "mocha-junit-reporter": "^2.0.2"
+      "mocha-junit-reporter": "^2.0.2",
+      "npm-run-all": "^4.1.5"
    },
    "nyc": {
       "all": false,
