@@ -18,6 +18,7 @@ import "./style.scss";
 const Home = () => {
   // STATE
   const [masterLoader, setMasterLoader] = useState<boolean>(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [productToAddToCart, setProductToAddToCart] = useState<IProductCard | undefined | any>(null);
 
 
