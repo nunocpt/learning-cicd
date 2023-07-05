@@ -1,6 +1,8 @@
 {
-   "name": "my-app",
+   "name": "learning-cicd",
    "version": "0.1.0",
+   "private": true,
+   "homepage": "https://nunocpt/github.io/learning-cicd",
    "dependencies": {
       "@emotion/react": "^11.8.1",
       "@emotion/styled": "^11.8.1",
@@ -42,6 +44,7 @@
       "web-vitals": "^2.1.4"
    },
    "scripts": {
+      "deploy": "gh-pages -d build",
       "start": "react-scripts -r @cypress/instrument-cra start && eslint src/* ",
       "build": "react-scripts build",
       "dummy-server": "npx json-server --watch db.json --port 3004 --delay 2000",
@@ -85,6 +88,7 @@
       "eslint": "^8.9.0",
       "eslint-plugin-cypress": "^2.12.1",
       "eslint-plugin-react": "^7.28.0",
+      "gh-pages": "^5.0.0",
       "html-webpack-plugin": "^4.5.2",
       "junit-report-merger": "^3.0.5",
       "mocha": "^10.0.0",
