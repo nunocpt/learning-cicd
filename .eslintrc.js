@@ -21,9 +21,10 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint", "simple-import-sort"],
+  ignorePatterns: ["*.scss", "*.woff", "*.woff2", "*.svg", "*.png"],
   rules: {
     quotes: ["error", "double"],
-    semi: ["error", "always"],
+    "semi": 0,
     "no-multi-spaces": ["error"],
     "simple-import-sort/imports": "error",
     "array-element-newline": ["error", "never"],
