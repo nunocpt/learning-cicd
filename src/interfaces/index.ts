@@ -19,8 +19,10 @@ export interface IData {
 
 
 export interface useIntersectionObserverProps {
+   // eslint-disable-next-line @typescript-eslint/no-explicit-any
    root: any;
    target: React.MutableRefObject<undefined>;
+   // eslint-disable-next-line @typescript-eslint/no-explicit-any
    onIntersect: any;
    threshold: number;
    rootMargin: string;
@@ -53,6 +55,7 @@ export interface IMetaData {
 
 
 export interface ILazyLoadingACS {
+   // eslint-disable-next-line @typescript-eslint/no-explicit-any
    [x: string]: any;
    totalCount: number;
    coverage?: number;

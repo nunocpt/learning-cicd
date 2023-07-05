@@ -1,12 +1,47 @@
-name: End-to-end tests
-on: push
+name: Testing YML
+on:
+  pull_request:
+    types: [synchronize]
+
 jobs:
-  cypress-run:
-    runs-on: ubuntu-22.04
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm install    
+        env:
+          CI: true
+      - name: Generate build
+        run: npm run build
+      # Share artifact inside workflow
+      - name: Share artifact inside workflow
+        uses: actions/upload-artifact@v1
+        with:
+          name: react-github-actions-build
+          path: build
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # cypress-run:
+    # runs-on: ubuntu-22.04
+    # steps:
+      # - name: Checkout
+      #   uses: actions/checkout@v3
+      # # Install npm dependencies, cache them correctly!
+      # # and run all Cypress tests
+      # - name: Cypress run: end to end tests
+      #   uses: cypress-io/github-action@v5
+      # - name: Cypress run: unit tests
+      #   uses: cypress-io/github-action@v5
+      #   with:
+      #     component: true
+  
