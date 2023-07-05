@@ -1,8 +1,7 @@
 name: End-to-end tests
 on:
-  push:
-    tags:
-      - '*'
+  pull_request:
+    types: [synchronize]
 
 jobs:
   build:
