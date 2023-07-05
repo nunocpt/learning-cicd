@@ -15,7 +15,7 @@ import { IProductsInfiniteQuery } from "./interfaces";
 import { IProductCard } from "components/general/ProductCard/interfaces";
 import "./style.scss";
 
-const Home = () => {
+const Home = () => { 
   // STATE
   const [masterLoader, setMasterLoader] = useState<boolean>(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
