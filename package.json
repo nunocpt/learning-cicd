@@ -57,10 +57,9 @@
       "cy:coverage-e2e": "npx nyc cypress run",
       "cy:coverage": "npx nyc cypress run && npx nyc cypress run-ct",
       "cy:report": "open coverage/lcov-report/index.html",
-      "eslint:test": "npx eslint src/**",
-      "eslint:fix": "npx eslint --fix . --ext .tsx,.ts src",
-      "validate": "npm-run-all --parallel cy:tests-e2e-cl cy:tests-unit-cl eslint",
-      "precommit": "npm run validate"
+      "lint": "eslint src/client --fix --color  --ignore-path .gitignore ",
+      "pre-commit-lint": "lint-staged",
+      "prepare": "husky install"
    },
    "browserslist": {
       "production": [
