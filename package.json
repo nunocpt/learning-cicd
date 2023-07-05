@@ -43,7 +43,7 @@
       "web-vitals": "^2.1.4"
    },
    "scripts": {
-      "deploy": "gh-pages -d build",
+      "deploy": "gh-pages -d react-scripts build",
       "start": "react-scripts -r @cypress/instrument-cra start && eslint src/* ",
       "build": "react-scripts build",
       "dummy-server": "npx json-server --watch db.json --port 3004 --delay 2000",
