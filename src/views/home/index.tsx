@@ -112,7 +112,7 @@ const Home = () => {
             Home page
             </h1>
             <h2>
-            Check out our amazing store!
+            Check out our amazing store
             </h2>
           </div>
         </section>
