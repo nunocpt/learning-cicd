@@ -48,9 +48,8 @@ jobs:
           build: npm run build
           start: npm start
           component: true
-      - name: Cypress run end-to-end tests
+      - name: Cypress run unit tests
         uses: cypress-io/github-action@v5
         with:
-          build: npm run build
           start: npm start
   
