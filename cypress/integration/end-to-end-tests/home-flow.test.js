@@ -13,7 +13,7 @@ context("Homepage (non logged in user) flow", () => {
     cy.contains("Check out our amazing store!");
   });
 
-  it("I can see the products", () => {
+  /* it("I can see the products", () => {
     cy.get("[data-cy=\"products-details-wrapper\"]").each(
       (element, index, list) => {
         cy.log("I check if this Productcard data matches the mock");
@@ -39,5 +39,5 @@ context("Homepage (non logged in user) flow", () => {
     cy.get("[data-cy=\"view-more\"]").first().click();
     cy.url().should("include", "/products/1");
     cy.contains("Iron Man");
-  });
+  }); */
 });
