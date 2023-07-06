@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f55966d.css",
-    "main.js": "/static/js/main.15ac319c.js",
-    "static/js/651.ca3f7b78.chunk.js": "/static/js/651.ca3f7b78.chunk.js",
-    "static/media/georgia.woff": "/static/media/georgia.c796714104e6b6d29319.woff",
-    "static/media/Graphik-Regular-Web.woff": "/static/media/Graphik-Regular-Web.70682f353f4d47644fb2.woff",
-    "static/media/Graphik-Regular-Web.woff2": "/static/media/Graphik-Regular-Web.469724dbb3e174d17b6b.woff2",
-    "static/media/inter-v8-latin-regular.woff": "/static/media/inter-v8-latin-regular.513f22e166bab984fa60.woff",
-    "static/media/oswald-v41-latin-regular.woff": "/static/media/oswald-v41-latin-regular.3d1d485b3ed0d998b43f.woff",
-    "static/media/inter-v8-latin-regular.woff2": "/static/media/inter-v8-latin-regular.c96fe5ff771f9e7b53ab.woff2",
-    "static/media/oswald-v41-latin-regular.woff2": "/static/media/oswald-v41-latin-regular.5ee68289b9bf597a8aff.woff2",
-    "index.html": "/index.html",
-    "main.6f55966d.css.map": "/static/css/main.6f55966d.css.map",
-    "main.15ac319c.js.map": "/static/js/main.15ac319c.js.map",
-    "651.ca3f7b78.chunk.js.map": "/static/js/651.ca3f7b78.chunk.js.map"
+    "main.css": "/learning-cicd/static/css/main.68db1834.css",
+    "main.js": "/learning-cicd/static/js/main.44799d08.js",
+    "static/js/651.ca3f7b78.chunk.js": "/learning-cicd/static/js/651.ca3f7b78.chunk.js",
+    "static/media/georgia.woff": "/learning-cicd/static/media/georgia.c796714104e6b6d29319.woff",
+    "static/media/Graphik-Regular-Web.woff": "/learning-cicd/static/media/Graphik-Regular-Web.70682f353f4d47644fb2.woff",
+    "static/media/Graphik-Regular-Web.woff2": "/learning-cicd/static/media/Graphik-Regular-Web.469724dbb3e174d17b6b.woff2",
+    "static/media/inter-v8-latin-regular.woff": "/learning-cicd/static/media/inter-v8-latin-regular.513f22e166bab984fa60.woff",
+    "static/media/oswald-v41-latin-regular.woff": "/learning-cicd/static/media/oswald-v41-latin-regular.3d1d485b3ed0d998b43f.woff",
+    "static/media/inter-v8-latin-regular.woff2": "/learning-cicd/static/media/inter-v8-latin-regular.c96fe5ff771f9e7b53ab.woff2",
+    "static/media/oswald-v41-latin-regular.woff2": "/learning-cicd/static/media/oswald-v41-latin-regular.5ee68289b9bf597a8aff.woff2",
+    "index.html": "/learning-cicd/index.html",
+    "main.68db1834.css.map": "/learning-cicd/static/css/main.68db1834.css.map",
+    "main.44799d08.js.map": "/learning-cicd/static/js/main.44799d08.js.map",
+    "651.ca3f7b78.chunk.js.map": "/learning-cicd/static/js/651.ca3f7b78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f55966d.css",
-    "static/js/main.15ac319c.js"
+    "static/css/main.68db1834.css",
+    "static/js/main.44799d08.js"
   ]
 }
