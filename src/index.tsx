@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <StrictMode>
-    <BrowserRouter basename={"https://nunocpt.github.io/learning-cicd/"}>
+    <BrowserRouter>
       <App /> 
     </BrowserRouter>
   </StrictMode>,
