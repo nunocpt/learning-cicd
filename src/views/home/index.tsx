@@ -112,13 +112,15 @@ const Home = () => {
             Home page
             </h1>
             <h2>
-            Check out our amazing store!
+            Check out our amazing store
             </h2>
           </div>
         </section>
 
         <section id="products-overview-wrapper" className="page-container">
           <h2>Super Heroes</h2>
+          <p>{process.env.REACT_APP_NOT_SECRET_CODE}</p>
+          <p>{process.env.REACT_APP_SECRET_CODE}</p>
           <div>
             <>
               {status === "error" ? (
