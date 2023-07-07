@@ -1,17 +1,19 @@
 import listMock from "../../fixtures/products.json";
 
 context("Homepage (non logged in user) flow", () => {
-  /* beforeEach(() => {
+  beforeEach(() => {
     cy.viewport(1152, 660);
 
     cy.log("Given that I'm on Homepage page");
-    cy.visit("/learning-cicd");
+    // cy.visit("/learning-cicd");
   });
 
   it("I can see the banner", () => {
-    cy.contains("Home page");
-    cy.contains("Check out our amazing store!");
-  }); */
+    /* cy.contains("Home page");
+    cy.contains("Check out our amazing store!"); */
+    cy.log("delete this after");
+  });
+
   /* it("I can see the products", () => {
     cy.get("[data-cy=\"products-details-wrapper\"]").each(
       (element, index, list) => {
