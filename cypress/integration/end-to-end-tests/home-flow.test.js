@@ -5,7 +5,7 @@ context("Homepage (non logged in user) flow", () => {
     cy.viewport(1152, 660);
 
     cy.log("Given that I'm on Homepage page");
-    cy.visit("/learning-cicd");
+    // cy.visit("/learning-cicd");
   });
 
   it("I can see the banner", () => {
