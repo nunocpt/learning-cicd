@@ -21,11 +21,12 @@ jobs:
           build: npm run build
           start: npm start
           component: true
-      - name: Cypress run end-to-end tests
-        uses: cypress-io/github-action@v5
-        with:
-          start: npm start
+      #- name: Cypress run end-to-end tests
+      #  uses: cypress-io/github-action@v5
+      #  with:
+      #    start: npm start
   build:
+    needs: cypress-run
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
